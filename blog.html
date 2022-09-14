@@ -22,18 +22,42 @@
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Accordion Item #1
+                        <h4>Difference Between Local Storage vs Session Storage</h4>
                     </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Property</th>
+                                    <th scope="col">Local Storage</th>
+                                    <th scope="col"> Session Storage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Size limit</td>
+                                    <td>The storage capacity of local storage is 5MB/10MB</td>
+                                    <td>The storage capacity of session storage is 5MB</td>
+                                </tr>
+                                <tr>
+
+                                    <td>Persistence</td>
+                                    <td>Forever until remove</td>
+                                    <td>Until the current tab is closed.</td>
+                                </tr>
+                                <tr>
+
+                                    <td>Data type</td>
+                                    <td>Single Domain, No sub-domain.</td>
+                                    <td>Single Domain,per browser tab.</td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
