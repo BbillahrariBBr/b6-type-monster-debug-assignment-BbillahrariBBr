@@ -115,7 +115,7 @@ const start = () => {
       // countdownOverlay.innerHTML = ``;
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "none";
-      display.classList.remove("active");
+      display.classList.remove("inactive");
 
       clearInterval(startCountdown);
       startTime = new Date().getTime();
